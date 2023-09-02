@@ -1,29 +1,19 @@
 body {
-    background-color: #141414;
-    /* Dark gray background */
+    background-color: #0d1117; /* GitHub's dark background color */
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     font-family: 'Arial', sans-serif;
-    color: #fff;
+    color: #c9d1d9; /* GitHub's text color */
 }
 
 .container {
-    background: rgba(0, 0, 0, 0.8);
-    /* Semi-transparent black background */
-    border-radius: 10px;
+    background: #161b22; /* Dark gray background */
+    border-radius: 6px;
     padding: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
     display: flex;
-    /* Center the content vertically and horizontally */
     flex-direction: column;
-    /* Stack elements vertically */
     align-items: center;
-    /* Center horizontally */
     text-align: center;
-    /* Center text */
 }
 
 .grid {
@@ -37,30 +27,25 @@ body {
 .square {
     width: 50px;
     height: 50px;
-    background-color: #0073e6;
-    /* Pink */
+    background-color: #1f6feb; /* GitHub's blue color */
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .square.yellow {
-    background-color: #fffb00;
-    /* Yellow */
+    background-color: #ffd33d; 
 }
 
 .square.red {
-    background-color: #ff0000;
-    /* Red */
+    background-color: #d73a49; 
 }
 
 .square.green {
-    background-color: #00ff00;
-    /* Green */
+    background-color: #28a745; 
 }
 
 button {
-    background-color: #ff6ac1;
-    /* Pink */
+    background-color: #1f6feb; 
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -71,22 +56,21 @@ button {
 }
 
 button:hover {
-    background-color: #ff43a3;
+    background-color: #0c4b94; 
 }
 
 input[type="number"] {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
+    background-color: #0d1117; 
+    border: 1px solid #30363d; 
     padding: 10px;
     border-radius: 5px;
-    color: #fff;
+    color: #c9d1d9;
     margin-right: 10px;
 }
 
-
 .score-container {
-    background-color: #ff6ac1;
-    color: #fff;
+    background-color: #0d1117; 
+    color: #c9d1d9;
     border-radius: 5px;
     padding: 10px;
     display: flex;
@@ -94,16 +78,14 @@ input[type="number"] {
     align-items: center;
     margin-top: 20px;
     font-size: 18px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
     max-width: 400px;
 }
-
 
 .score-label {
     flex: 1;
     text-align: center;
 }
-
 
 .score-player,
 .score-computer {
@@ -126,13 +108,13 @@ input[type="number"] {
     font-size: 32px;
     margin: 0;
     padding: 10px 0;
-    color: #ff6ac1;
+    color: #1f6feb; 
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 label[for="timeInput"] {
-    color: #fff;
+    color: #c9d1d9;
     font-size: 16px;
     margin-right: 10px;
 }
