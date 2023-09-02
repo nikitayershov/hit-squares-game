@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="header">
+      <h1>Test game by Mykyta Yershov</h1>
+      <div class="controls">
+        <label for="timeInput">Time in ms:</label>
+        <input type="number" [(ngModel)]="timeInput" id="timeInput" name="timeInput" placeholder="Enter time">
+      </div>
+      <div class="new-row">
+        <button (click)="startGame()">Start</button>
+      </div>
+    </div>
+    <div class="score-container">
+      <div class="score-label">Score</div>
+      <div class="score-player">Player {{ playerScore }}</div>
+      <div class="score-computer">Computer {{ computerScore }}</div>
+    </div>
+    <div id="field" class="grid">
+      <div *ngFor="let square of squares" class="square" [ngClass]="square.color" (click)="onSquareClick(square)"></div>
+    </div>
+    <app-modal *ngIf="showModal" [winner]="winner" (restartGameClicked)="handleRestartGame()"></app-modal>
+</div>
