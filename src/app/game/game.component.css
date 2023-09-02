@@ -1,6 +1,6 @@
-/* Add a dark background */
 body {
-    background-color: #141414; /* Dark gray background */
+    background-color: #141414;
+    /* Dark gray background */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -8,53 +8,59 @@ body {
     min-height: 100vh;
     font-family: 'Arial', sans-serif;
     color: #fff;
-  }
-  
-  /* Style the game container */
-  .container {
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    display: flex; /* Center the content vertically and horizontally */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Center text */
-  }
-  
-  /* Style the game grid */
-  .grid {
+    display: flex;
+    /* Center the content vertically and horizontally */
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center horizontally */
+    text-align: center;
+    /* Center text */
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(10, 50px);
     grid-template-rows: repeat(10, 50px);
     gap: 5px;
     margin-top: 20px;
-  }
-  
-  /* Style the individual squares */
-  .square {
+}
+
+.square {
     width: 50px;
     height: 50px;
-    background-color: #ff6ac1; /* Pink */
+    background-color: #0073e6;
+    /* Pink */
     border-radius: 5px;
     transition: background-color 0.3s;
-  }
-  
-  .square.yellow {
-    background-color: #fffb00; /* Yellow */
-  }
-  
-  .square.red {
-    background-color: #ff0000; /* Red */
-  }
-  
-  .square.green {
-    background-color: #00ff00; /* Green */
-  }
-  
-  /* Style the Start button */
-  button {
-    background-color: #ff6ac1; /* Pink */
+}
+
+.square.yellow {
+    background-color: #fffb00;
+    /* Yellow */
+}
+
+.square.red {
+    background-color: #ff0000;
+    /* Red */
+}
+
+.square.green {
+    background-color: #00ff00;
+    /* Green */
+}
+
+button {
+    background-color: #ff6ac1;
+    /* Pink */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -62,26 +68,25 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #ff43a3; /* Lighter Pink */
-  }
-  
-  /* Style the input field */
-  input[type="number"] {
+}
+
+button:hover {
+    background-color: #ff43a3;
+}
+
+input[type="number"] {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     padding: 10px;
     border-radius: 5px;
     color: #fff;
     margin-right: 10px;
-  }
-  
-  /* Stylish score container */
-  .score-container {
-    background-color: #ff6ac1; /* Pink background */
-    color: #fff; /* White text color */
+}
+
+
+.score-container {
+    background-color: #ff6ac1;
+    color: #fff;
     border-radius: 5px;
     padding: 10px;
     display: flex;
@@ -91,45 +96,43 @@ body {
     font-size: 18px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     max-width: 400px;
-  }
-  
-  /* Style the individual score labels */
-  .score-label {
+}
+
+
+.score-label {
     flex: 1;
     text-align: center;
-  }
-  
-  /* Style player and computer scores */
-  .score-player,
-  .score-computer {
+}
+
+
+.score-player,
+.score-computer {
     flex: 1;
     text-align: center;
     font-weight: bold;
-  }
-  
-  /* Add hover effect to squares */
-  .square:hover {
+}
+
+.square:hover {
     opacity: 0.8;
     transform: scale(1.05);
-  }
-  
-  /* Header styles */
-  .header {
+}
+
+.header {
     margin-bottom: 20px;
-    text-align: center; /* Center align the header text */
-  }
-  
-  .header h1 {
-    font-size: 32px; /* Increase font size */
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
     margin: 0;
-    padding: 10px 0; /* Add some padding for spacing */
-    color: #ff6ac1; /* Pink text color */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 2px; /* Add letter spacing for style */
-  }
-  
-  label[for="timeInput"] {
-    color: #fff; /* Text color */
-    font-size: 16px; /* Font size */
-    margin-right: 10px; /* Right margin for spacing */
-  }
+    padding: 10px 0;
+    color: #ff6ac1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+label[for="timeInput"] {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+}
